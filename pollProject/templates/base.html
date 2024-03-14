@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <!-- Include Bootstrap stylesheet from CDN for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+    <!-- Set the title of the page, with optional block for customization -->
+    <title>The Poll Station{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <!-- Include the navigation bar -->
+    {% include 'partials/_navbar.html' %}
+    <!-- Container for page content with a centered row -->
+    <div class="container">
+        <div class="row">
+            <div class=".col-md-3 m-auto">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

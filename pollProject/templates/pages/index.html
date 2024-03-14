@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Display a card with a welcome message and a button to view available polls -->
+<div class="card text-center">  
+    <div class="card-body" > 
+       <h1> Welcome to the  HyperionDev Poll Station!</h1>
+    <a class="btn btn-dark" href="{% url 'polls:index' %}"> 
+        View Available Polls! </a>   
+    </div>
+</div>
+
+{% endblock %}

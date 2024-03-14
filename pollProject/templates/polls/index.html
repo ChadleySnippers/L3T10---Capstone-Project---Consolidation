@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Heading for the list of poll questions -->
+<h1 class="text-center mb-3">Poll Questions</h1>
+
+<!-- Check if there are any questions available -->
+{% if latest_question_list %}
+    {% for question in latest_question_list %}
+        <!-- Display each question in a card with options to vote or view results -->
+        <div class="card-mb-3">
+            <div class="card-body">
+                <p class="lead">{{ question.question_text }}</p>
+                <a href="{% url 'polls:detail' question.id %}" class="btn btn-primary btn-sm">Vote Now!</a>
+                <a href="{% url 'polls:results' question.id %}" class="btn btn-secondary btn-sm">Results!</a>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <!-- Display a message if no polls are available -->
+    <p>No polls available</p>
+{% endif %}
+
+{% endblock %}

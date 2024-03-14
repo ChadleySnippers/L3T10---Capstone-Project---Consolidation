@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Login to your account</h2>
+<!-- Login form with post method, centered styling, and CSRF token -->
+<form method="post" action="{% url 'login' %}" class="col-md" style="text-align: center;">
+    {% csrf_token %}
+    {{ form.as_p }} <!-- Render form fields as paragraphs -->
+    <button type="submit" class="btn btn-primary">Log In</button>
+</form>
+
+{% endblock %}
