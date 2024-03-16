@@ -12,14 +12,17 @@ Before running the application, ensure that you have the following installed:
 - Python (version 3.8)
 - Docker
 
+
 ## Follow the instructions below:
 
  - Create a virtual environment:
+
 
     python -m venv .venv
 
 
     Activate the virtual environment:
+
 
     On Windows:
     venv\Scripts\activate
@@ -29,12 +32,14 @@ Before running the application, ensure that you have the following installed:
 
 
 
+
 - Install dependencies:
     pip install -r requirements.txt
 
 
     Run the application:
     python manage.py runserver
+
 
 
 - Using Docker
