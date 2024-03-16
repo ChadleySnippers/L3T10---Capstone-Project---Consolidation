@@ -1,8 +1,9 @@
-# My Django Application
+# Voting Poll Application
 
 ## Overview
 
-This project is a Django web application for [brief description of what the application does].
+This project is a Django web application for conducting voting polls. Users can create polls with multiple-choice questions, view details and results of existing polls, and vote on poll choices.
+
 
 ## Prerequisites
 
@@ -40,7 +41,7 @@ Before running the application, ensure that you have the following installed:
 
     Clone the repository:
     git clone https://github.com/ChadleySnippers/L3T10---Capstone-Project---Consolidation.git
-    
+
     cd your-repo
 
 
