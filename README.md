@@ -39,7 +39,7 @@ Before running the application, ensure that you have the following installed:
 - Using Docker
 
     Clone the repository:
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/ChadleySnippers/L3T10---Capstone-Project---Consolidation.git
     cd your-repo
 
 
