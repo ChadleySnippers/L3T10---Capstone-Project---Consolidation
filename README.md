@@ -40,6 +40,7 @@ Before running the application, ensure that you have the following installed:
 
     Clone the repository:
     git clone https://github.com/ChadleySnippers/L3T10---Capstone-Project---Consolidation.git
+    
     cd your-repo
 
 
